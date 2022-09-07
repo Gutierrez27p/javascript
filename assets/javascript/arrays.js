@@ -69,3 +69,26 @@ console.log(perfumeria)
     let perfumeNuevo = new perfume(nombrePerfumeNuevo,categoriaNuevo,autorNuevo,precioNuevo,disponibilidadNuevo)
     perfumeria.push(perfumeNuevo)
 } */
+
+const disponibles = perfumeria.filter(res=>{
+    
+    return res.disponibilidad === true ;
+})
+
+const precioMenorVeinte = perfumeria.filter(res=>{
+    
+    return res.precio < 20000 ;
+})
+
+const nombreConG = perfumeria.filter(res=>{
+    
+    if(res.nombre.includes('G')){
+        return res.nombre
+    }else{
+        return undefined
+    } 
+})
+
+console.log(disponibles)
+console.log(precioMenorVeinte)
+console.log(nombreConG)
