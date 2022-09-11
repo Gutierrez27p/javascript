@@ -1,8 +1,3 @@
-//Saludo bienvenida 
-
-let nombreCompleto = prompt ("Ingrese su nombre completo, por favor:");
-alert ("Bienvenido, " + nombreCompleto);
-
 //Perfumeria
 
 class perfume {
@@ -45,9 +40,10 @@ let perfume9 = new perfume("Luna Confinante","Fougère","Natura", 6900, false)
 let perfume10 = new perfume("Be Delicious","Verde","DONNA KARAN", 18427, true)
 
 // resumido de lineas
-// perfumeria.push(perfume1,perfume2,perfume3,perfume4,perfume5,perfume6,perfume7,perfume8,perfume9,perfume10)
 
-perfumeria.push(perfume1)
+perfumeria.push(perfume1,perfume2,perfume3,perfume4,perfume5,perfume6,perfume7,perfume8,perfume9,perfume10)
+
+/* perfumeria.push(perfume1)
 perfumeria.push(perfume2)
 perfumeria.push(perfume3)
 perfumeria.push(perfume4)
@@ -56,11 +52,11 @@ perfumeria.push(perfume6)
 perfumeria.push(perfume7)
 perfumeria.push(perfume8)
 perfumeria.push(perfume9)
-perfumeria.push(perfume10)
+perfumeria.push(perfume10) */
 
 console.log(perfumeria)
 
-/* function agregarPerfume(){
+function agregarPerfume(){
     let nombrePerfumeNuevo = prompt("Ingrese nombre del perfume")
     let categoriaNuevo = prompt ("Ingrese la categoria")
     let autorNuevo = prompt ("Ingrese nombre del autor")
@@ -68,7 +64,7 @@ console.log(perfumeria)
     let disponibilidadNuevo = prompt ("Ingrese stock")
     let perfumeNuevo = new perfume(nombrePerfumeNuevo,categoriaNuevo,autorNuevo,precioNuevo,disponibilidadNuevo)
     perfumeria.push(perfumeNuevo)
-} */
+}
 
 const disponibles = perfumeria.filter(res=>{
     
