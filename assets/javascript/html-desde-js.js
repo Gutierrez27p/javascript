@@ -22,7 +22,7 @@ const cargaEventos = () =>
     for (const button of buttons) 
     {
         button.addEventListener('click', ()=>{
-            const perf = perfumeria.find(perfumes => perfume.codigo == button.id);
+            const perf = perfumeria.find(perfumes => perfumes.codigo == button.id);
             console.log('perfumes seleccionados: ', perf);
         })
     }
