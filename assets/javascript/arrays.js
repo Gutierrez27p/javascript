@@ -1,12 +1,24 @@
+/* perfumeria.push(perfume1)
+perfumeria.push(perfume2)
+perfumeria.push(perfume3)
+perfumeria.push(perfume4)
+perfumeria.push(perfume5)
+perfumeria.push(perfume6)
+perfumeria.push(perfume7)
+perfumeria.push(perfume8)
+perfumeria.push(perfume9)
+perfumeria.push(perfume10) */
+
 //Perfumeria
 
 class perfume {
-    constructor(nombre, categoria, autor, precio, disponibilidad){
+    constructor(nombre, categoria, autor, precio, disponibilidad,codigo){
         this.nombre=nombre
         this.categoria=categoria
         this.autor=autor
         this.precio=precio
         this.disponibilidad=disponibilidad
+        this.codigo=codigo
     }
     stock(){
         let error = "En stock"
@@ -28,31 +40,18 @@ class perfume {
 
 const perfumeria = []
 
-let perfume1 = new perfume("MISS DIOR A.B.","Floral","Dior", 30900, true)
-let perfume2 = new perfume("This Love | Perfume de mujer","Frutal", "This Love", 7500,false)
-let perfume3 = new perfume("GUCCI BLOOM EDP","Aromático","Gucci", 19750,true)
-let perfume4 = new perfume("SCANDAL EDP","Cítrico","Jean Paul Gaultier", 20050, true)
-let perfume5 = new perfume("Eros Femme","Amaderado","Versace", 21380,true)
-let perfume6 = new perfume("Far Away Infinity","Oriental","Far Away", 4950, false)
-let perfume7 = new perfume("PURE POISON","Musk","Dior", 30900, true)
-let perfume8 = new perfume("BOSS THE SCENT FOR HER","Chipre","Hugo Boss", 21250, false)
-let perfume9 = new perfume("Luna Confinante","Fougère","Natura", 6900, false)
-let perfume10 = new perfume("Be Delicious","Verde","DONNA KARAN", 18427, true)
-
-// resumido de lineas
+let perfume1 = new perfume("MISS DIOR A.B.","Floral","Dior", 30900, true, 001)
+let perfume2 = new perfume("This Love | Perfume de mujer","Frutal", "This Love", 7500,false, 002)
+let perfume3 = new perfume("GUCCI BLOOM EDP","Aromático","Gucci", 19750,true, 003)
+let perfume4 = new perfume("SCANDAL EDP","Cítrico","Jean Paul Gaultier", 20050, true, 004)
+let perfume5 = new perfume("Eros Femme","Amaderado","Versace", 21380,true, 005)
+let perfume6 = new perfume("Far Away Infinity","Oriental","Far Away", 4950, false, 006)
+let perfume7 = new perfume("PURE POISON","Musk","Dior", 30900, true, 007)
+let perfume8 = new perfume("BOSS THE SCENT FOR HER","Chipre","Hugo Boss", 21250, false, 0015)
+let perfume9 = new perfume("Luna Confinante","Fougère","Natura", 6900, false, 027)
+let perfume10 = new perfume("Be Delicious","Verde","DONNA KARAN", 18427, true, 010)
 
 perfumeria.push(perfume1,perfume2,perfume3,perfume4,perfume5,perfume6,perfume7,perfume8,perfume9,perfume10)
-
-/* perfumeria.push(perfume1)
-perfumeria.push(perfume2)
-perfumeria.push(perfume3)
-perfumeria.push(perfume4)
-perfumeria.push(perfume5)
-perfumeria.push(perfume6)
-perfumeria.push(perfume7)
-perfumeria.push(perfume8)
-perfumeria.push(perfume9)
-perfumeria.push(perfume10) */
 
 console.log(perfumeria)
 
