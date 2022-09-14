@@ -23,7 +23,13 @@ const cargaEventos = () =>
     {
         button.addEventListener('click', ()=>{
             const perf = perfumeria.find(perfumes => perfumes.codigo == button.id);
-            console.log('perfumes seleccionados: ', perf);
+            //console.log('perfumes seleccionados: ', perf);
+            if(perf)
+            {
+                carrito.push(perf);
+                updateCarrito(carrito);
+            }
+
         })
     }
 }
