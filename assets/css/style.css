@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+}
+
+section{
+    display: flex;
+    width: 100%;
+    min-width: 350px;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#cart{
+    height: auto;
+    width: 100%;
+    max-width: 1248px;
+    margin: 0px auto;
+}
+
+#cart #cartContainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#cart #cartContainer h2{
+    width: 100%;
+    text-align: center;
+    font-family: 'sant-serif';
+    margin-bottom: 1rem;
+}
+
+#cart #cartContainer .cart-item{
+    background-color: rgb(221, 221, 221);
+    width: 100%;
+    margin: 5px 35px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'sant-serif';
+    padding: 1rem;
+}
+
+#cart #cartContainer .cart-item h4{
+    width: 250px;
+    text-align: center;
+    /*text-align: left;*/
+}
+
+.card{
+    width: 215px;
+    height: auto;
+    margin: 15px;
+    padding: 0.7rem;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+    background-color: #f0f0f0;
+    font-family: 'sant-serif';
+}
+
+.card h3{
+    margin: 0.5rem 0rem;
+}
+
+.card h4{
+    font-size: 0.8rem;
+    margin: 0.5rem 0rem;
+    color: rgb(78, 78, 78);
+    font-weight: normal;
+}
+
+.card .button{
+    width: 100%;
+    border: none;
+    padding: 0.5rem;
+    background-color: rgb(80, 80, 80);
+    color: white;
+    font-family: 'sant-serif';
+    margin: 0.5rem 0rem;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+    box-shadow: 1.25px 1.25px 10px rgba(0,0,0,0.5);
+}
+
+.card:img{
+    width: 100%;
+}
