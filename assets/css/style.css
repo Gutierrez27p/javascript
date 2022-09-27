@@ -18,6 +18,18 @@ section{
     flex-wrap: wrap;
 }
 
+.centrado,
+.search{
+    margin: 2rem;
+    padding-top: 1rem;
+}
+
+/* Margen productos section js*/
+
+.margen{
+    margin: 2rem;
+}
+
 #cart{
     height: auto;
     width: 100%;
@@ -94,4 +106,29 @@ section{
 
 .card:img{
     width: 100%;
+}
+
+/* page contactenos */
+
+.contactSpace{
+    padding: 2rem 10rem 0 10rem;
+}
+
+/* Tabla index*/
+
+table {
+    margin: 2rem;
+    padding: 0 6rem 0 6rem;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.button-corn{
+    margin: 2rem;
+    padding: 0 3rem 0 3rem;
 }

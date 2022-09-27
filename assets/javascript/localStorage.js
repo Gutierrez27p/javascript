@@ -1,12 +1,27 @@
-const inputNombre = document.querySelector("#imputNombre")
-const inputEmail = document.querySelector("#imputEmail")
-const inputComentarios = document.querySelector("#imputComentarios")
+const inputNombre = document.querySelector("#inputNombre")
+const inputEmail = document.querySelector("#inputEmail")
+const inputComentarios = document.querySelector("#inputComentarios")
 const btnEnviar = document.querySelector("#btnEnviar")
 
-function guardarDatos()
-{   localStorage.setItem("nombre",inputNombre.value)
+function guardarDatos() {
+    localStorage.setItem("nombre",inputNombre.value)
     localStorage.setItem("email",inputEmail.value)
     localStorage.setItem("comentarios",inputComentarios.value)
 }
 
 btnEnviar.addEventListener("click", guardarDatos)
+
+function recuperarDatos()
+{
+    inputNombre.value = localStorage.getItem("nombre")
+    inputEmail.value = localStorage.getItem("email")
+    inputComentarios.value =localStorage.getItem("comentarios")
+}
+
+document.addEventListener("DOMContentLoaded", recuperarDatos)
+
+//localStorage.removeItem ("")  ----- Borrar item especifico 
+//localStorage.clear() -------------- Limpia todo lo guardado
+
+//JSON    -------    parse:   stringify: 
+

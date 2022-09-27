@@ -101,7 +101,6 @@ const updateCart = (cart) =>
     {
         container.parentNode.removeChild(container);
     }
-
     let div = document.createElement('div');
     div.setAttribute('id', 'cartContainer');
     div.innerHTML += `<h2>Carrito de compras</h2>`;
@@ -146,6 +145,7 @@ const loadEvents = () =>
                             cantidad: 1
                     }
                     cart.push(newProduct);
+                    localStorage.setItem("cart", JSON.stringify(cart))
                 }
             }
             updateCart(cart);

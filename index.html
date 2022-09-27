@@ -8,17 +8,36 @@
     <meta name="keywords" content="Carrito de compras, carrito perfumeria, carro de compras, javascript, coderhouse, perfumerie, perfumeria">
     <meta name="author" content="Gutierrez Pablo, Pablo.guty.2008@gmail.com">
     <title>Perfumerië</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://kit.fontawesome.com/6f24dcf161.js" crossorigin="anonymous"></script>
     <script defer src="assets/javascript/main.js"></script>
 </head>
 <body>
-    <h1>Productos</h1>
-    <p>Listado de productos disponibles:</p>
-    <div>
-        <span><input type="search" id="filtroProducto" placeholder="Ingresa parte del nombre del producto a buscar"></span>
-    </div> 
-    <section id="container"></section>
-    <section id="cart"></section>
+    <article>
+        <h1 class="centrado">Productos</h1>
+        <p class="centrado">Listado de productos disponibles:</p>
+        <div class="search">
+            <span><input type="search" id="filtroProducto" width="60" placeholder="Ingresa parte del nombre del producto a buscar"></span>
+        </div> 
+        <table>
+            <thead class="tabla">
+                <tr>
+                    <th>ID</th>
+                    <th>DESCRIPCION</th>
+                    <th>IMPORTE</th>
+                    <th>ACCIÓN</th>
+                </tr>
+                <section class="margen" id="container"></section>
+                <section class="margen" id="cart"></section>
+            </thead>
+            <tbody id="tabla">
+            </tbody>
+        </table>
+        <footer>
+            <a href="assets/pages/cart.html"><button class="button-corn">VER CARRITO</button></a>
+            <a href="assets/pages/contactenos.html"><button class="button-corn">CONTACTENOS</button></a>
+        </footer>
+    </article>
 </body>
 </html>
