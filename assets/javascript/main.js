@@ -6,7 +6,7 @@ const Products =
         price:'$ 30.900',
         description:'Floral',
         brand:'DIOR',
-        image:'assets/img/',
+        image:'assets/img/miss-dior.jpg',
     },
     {
         id:2102,
@@ -14,7 +14,7 @@ const Products =
         price:'$ 7.500',
         description:'Frutal',
         brand:'This Love',
-        image:'assets/img/this-love-frutal.png',
+        image:'assets/img/this-love-frutal.jpg',
     },
     {
         id:2103,
@@ -22,7 +22,7 @@ const Products =
         price:'$ 19.750',
         description:'Aromático',
         brand:'Gucci',
-        image:'assets/img/perfume1.png',
+        image:'assets/img/gucci-bloom.jpg',
     },
     {
         id:2104,
@@ -30,7 +30,7 @@ const Products =
         price:'$ 4.950',
         description:'Oriental',
         brand:'Far Away',
-        image:'assets/img/perfume1.png',
+        image:'assets/img/far-way-infinity.jpg',
     },
     {
         id:2105,
@@ -38,7 +38,7 @@ const Products =
         price:'$ 20.050',
         description:'Cítrico',
         brand:'Jean Paul Gaultier',
-        image:'assets/img/perfume1.png',
+        image:'assets/img/scandal-jean.jpg',
     },
     {
         id:2106,
@@ -46,7 +46,7 @@ const Products =
         price:'$ 30.900',
         description:'Musk',
         brand:'DIOR',
-        image:'assets/img/perfume1.png',
+        image:'assets/img/pure-poison.jpg',
     },
     {
         id:2107,
@@ -54,7 +54,7 @@ const Products =
         price:'$ 21.380',
         description:'Amaderado',
         brand:'Versace',
-        image:'assets/img/perfume1.png',
+        image:'assets/img/versace-eros.jpg',
     },
     {
         id:2108,
@@ -70,7 +70,7 @@ const Products =
         price:'$ 6.900',
         description:'Fougère',
         brand:'Natura',
-        image:'assets/img/perfume1.png',
+        image:'assets/img/luna-confinante.jpg',
     },
     {
         id:2110,
@@ -78,7 +78,7 @@ const Products =
         price:'$ 18.427',
         description:'Verde',
         brand:'DONNA KARAN',
-        image:'assets/img/perfume1.png',
+        image:'assets/img/verde.jpg',
     }
 ]
 
