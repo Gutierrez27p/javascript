@@ -6,15 +6,15 @@ const Products =
         price:'$ 30.900',
         description:'Floral',
         brand:'DIOR',
-        image:'assets/img/perfume1.png',
+        image:'assets/img/',
     },
     {
         id:2102,
-        name:'This Love | Perfume de mujer',
+        name:'This Love',
         price:'$ 7.500',
         description:'Frutal',
         brand:'This Love',
-        image:'assets/img/perfume1.png',
+        image:'assets/img/this-love-frutal.png',
     },
     {
         id:2103,
@@ -58,7 +58,7 @@ const Products =
     },
     {
         id:2108,
-        name:'BOSS THE SCENT FOR HER',
+        name:'BOSS THE SCENT',
         price:'$ 21.250',
         description:'Chipre',
         brand:'Hugo Boss',

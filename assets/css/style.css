@@ -8,6 +8,33 @@ body{
     background-color: white;
 }
 
+/* Navbar */
+
+.navbar-brand{
+    font-size: 36px;
+    color: rgb(247, 130, 130);
+}
+
+nav ul .letter{
+    font-size: 16px;
+    align-items: center;
+    margin-bottom: 0;
+    padding-left: 5rem;
+}
+
+.buscador{
+    font-size: 20px;
+    margin-bottom: 0;
+    padding-right: 5rem;
+}
+
+.buscador .buscar{
+    font-size: 15px;
+    width: 250px;
+}
+
+/* Primer section */
+
 section{
     display: flex;
     width: 100%;
@@ -18,10 +45,14 @@ section{
     flex-wrap: wrap;
 }
 
-.centrado,
-.search{
+.centrado{
     margin: 2rem;
     padding-top: 1rem;
+    font-size: 22px;
+}
+
+.title{
+    font-size: 35px;
 }
 
 /* Margen productos section js*/
@@ -80,6 +111,7 @@ section{
 
 .card h3{
     margin: 0.5rem 0rem;
+    font-size: 24px;
 }
 
 .card h4{
@@ -87,6 +119,7 @@ section{
     margin: 0.5rem 0rem;
     color: rgb(78, 78, 78);
     font-weight: normal;
+    font-size: 15px;
 }
 
 .card .button{
@@ -132,3 +165,4 @@ footer{
     margin: 2rem;
     padding: 0 3rem 0 3rem;
 }
+
