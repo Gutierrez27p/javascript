@@ -39,16 +39,20 @@ section{
     display: flex;
     width: 100%;
     min-width: 350px;
-    height: 100vh;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+}
+
+section img{
+    align-items: center;
 }
 
 .centrado{
     margin: 2rem;
     padding-top: 1rem;
     font-size: 22px;
+    color: #ec9898;
 }
 
 .title{
@@ -82,12 +86,11 @@ section{
 }
 
 #cart #cartContainer .cart-item{
-    background-color: rgb(221, 221, 221);
+    background-color: rgb(255 216 211);
     width: 100%;
     margin: 5px 35px;
     display: flex;
     justify-content: space-between;
-    font-family: 'sant-serif';
     padding: 1rem;
 }
 
@@ -105,8 +108,8 @@ section{
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
     transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
-    background-color: #f0f0f0;
-    font-family: 'sant-serif';
+    background-color: #fbf3f3;
+    border: var(--bs-card-border-width) solid #f18f8f2d;
 }
 
 .card h3{
@@ -125,9 +128,8 @@ section{
 .card .button{
     width: 100%;
     border: none;
-    padding: 0.5rem;
-    background-color: rgb(80, 80, 80);
-    color: white;
+    background-color: #d59191;
+    color: rgb(252, 243, 243);
     font-family: 'sant-serif';
     margin: 0.5rem 0rem;
 }
@@ -137,9 +139,6 @@ section{
     box-shadow: 1.25px 1.25px 10px rgba(0,0,0,0.5);
 }
 
-.card:img{
-    width: 100%;
-}
 
 /* page contactenos */
 
@@ -149,9 +148,8 @@ section{
 
 /* Tabla index*/
 
-table {
+section table {
     margin: 2rem;
-    padding: 0 6rem 0 6rem;
 }
 
 footer{
@@ -166,3 +164,36 @@ footer{
     padding: 0 3rem 0 3rem;
 }
 
+/* Carrito de compras */
+
+.cartShop {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    color: #ec9898;
+}
+
+.cartShop h1{
+    margin: 1rem;
+} 
+
+.cartShop h2{
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem;
+}
+
+.cartShop div table tr{
+    padding: 2rem;
+}
+
+.sectionsCart{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sectionsCart h5{
+    font-size: 14px;
+}

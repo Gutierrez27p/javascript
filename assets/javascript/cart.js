@@ -5,14 +5,17 @@ function backupCart()
     let tabla = document.querySelector("tbody")
         cart.forEach(Products => {
             let fila = `<tr>
+                            <td>${Products.id}</td>
                             <td>${Products.name}</td>
                             <td>${Products.price}</td>
+                            <td>${Products.cantidad}</td>
                         </tr>`
                         tabla.innerHTML += fila
         });
 }
 
 backupCart();
+
 /* 
 const cart = JSON.parse(localStorage.getItem("cart")) || [];
 

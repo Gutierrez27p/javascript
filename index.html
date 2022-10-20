@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://kit.fontawesome.com/6f24dcf161.js" crossorigin="anonymous"></script>
     <script defer src="assets/javascript/main.js"></script>
+    <script defer src="assets/javascript/cart.js"></script>
 </head>
 <body>
     <header>
@@ -26,16 +27,13 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item letter">
-                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
                         </li>
                         <li class="nav-item dropdown letter">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Marcas
-                            </a>
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Marcas</a>
                         <ul class="dropdown-menu letter">
                             <li><a class="dropdown-item" href="#">Action</a></li>
                             <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
                         </li>
@@ -43,7 +41,7 @@
                             <a class="nav-link active" aria-current="page" href="#">Categorias</a>
                         </li>
                         <li class="nav-item letter">
-                            <a class="nav-link active" aria-current="page" href="#">Contactanos</a>
+                            <a href="assets/pages/contactenos.html" class="nav-link active" aria-current="page" href="#">Contactanos</a>
                         </li>
                     </ul>
                     <form class="d-flex buscador" role="search">
@@ -57,24 +55,25 @@
     <article>
         <h1 class="centrado title">Productos</h1>
         <p class="centrado">Listado de productos disponibles:</p>
-        <table>
-            <thead class="tabla">
-                <tr>
-                    <th>ID</th>
-                    <th>DESCRIPCION</th>
-                    <th>IMPORTE</th>
-                    <th>ACCIÓN</th>
-                </tr>
-                <section class="margen" id="container"></section>
-                <section class="margen" id="cart"></section>
-            </thead>
-            <tbody id="tabla">
-            </tbody>
-        </table>
-        <footer>
+        
+        <section>
+            <table>
+                <thead class="tabla">
+                    <tr>
+                        <th>ID</th>
+                        <th>DESCRIPCION</th>
+                        <th>IMPORTE</th>
+                        <th>CANTIDAD</th>
+                    </tr>
+                    <section class="margen" id="container"></section>
+                    <section class="margen" id="cart"></section>
+                </thead>
+                <tbody id="tabla">
+                </tbody>
+            </table>
             <a href="assets/pages/cart.html"><button class="button-corn">VER CARRITO</button></a>
             <a href="assets/pages/contactenos.html"><button class="button-corn">CONTACTENOS</button></a>
-        </footer>
+        </section>
     </article>
 </body>
 </html>

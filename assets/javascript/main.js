@@ -6,7 +6,7 @@ const Products =
         price:'$ 30.900',
         description:'Floral',
         brand:'DIOR',
-        image:'assets/img/miss-dior.jpg',
+        image:'assets/img/miss-dior.png',
     },
     {
         id:2102,
@@ -14,7 +14,7 @@ const Products =
         price:'$ 7.500',
         description:'Frutal',
         brand:'This Love',
-        image:'assets/img/this-love-frutal.jpg',
+        image:'assets/img/this-love-frutal.png',
     },
     {
         id:2103,
@@ -22,7 +22,7 @@ const Products =
         price:'$ 19.750',
         description:'Aromático',
         brand:'Gucci',
-        image:'assets/img/gucci-bloom.jpg',
+        image:'assets/img/gucci-bloom.png',
     },
     {
         id:2104,
@@ -30,7 +30,7 @@ const Products =
         price:'$ 4.950',
         description:'Oriental',
         brand:'Far Away',
-        image:'assets/img/far-way-infinity.jpg',
+        image:'assets/img/far-way-infinity.png',
     },
     {
         id:2105,
@@ -38,7 +38,7 @@ const Products =
         price:'$ 20.050',
         description:'Cítrico',
         brand:'Jean Paul Gaultier',
-        image:'assets/img/scandal-jean.jpg',
+        image:'assets/img/scandal-jean.png',
     },
     {
         id:2106,
@@ -46,7 +46,7 @@ const Products =
         price:'$ 30.900',
         description:'Musk',
         brand:'DIOR',
-        image:'assets/img/pure-poison.jpg',
+        image:'assets/img/pure-poison.png',
     },
     {
         id:2107,
@@ -54,7 +54,7 @@ const Products =
         price:'$ 21.380',
         description:'Amaderado',
         brand:'Versace',
-        image:'assets/img/versace-eros.jpg',
+        image:'assets/img/versace-eros.png',
     },
     {
         id:2108,
@@ -62,7 +62,7 @@ const Products =
         price:'$ 21.250',
         description:'Chipre',
         brand:'Hugo Boss',
-        image:'assets/img/perfume1.png',
+        image:'assets/img/boss.png',
     },
     {
         id:2109,
@@ -70,7 +70,7 @@ const Products =
         price:'$ 6.900',
         description:'Fougère',
         brand:'Natura',
-        image:'assets/img/luna-confinante.jpg',
+        image:'assets/img/luna-confinante.png',
     },
     {
         id:2110,
@@ -78,12 +78,11 @@ const Products =
         price:'$ 18.427',
         description:'Verde',
         brand:'DONNA KARAN',
-        image:'assets/img/verde.jpg',
+        image:'assets/img/verde.png',
     }
 ]
 
 // Filtro de busqueda de productos
-
 
 
 // Agregado de Productos al carrito
@@ -108,6 +107,7 @@ const updateCart = (cart) =>
     {
         div.innerHTML +=`
             <div class="cart-item">
+            <h4>ID: ${product.id}</h4>
             <h4>Producto: ${product.name} </h4>
             <h4>Precio: ${product.price} </h4>
             <h4>Cantidad: ${product.cantidad} </h4>
@@ -116,6 +116,7 @@ const updateCart = (cart) =>
     }
     cartContainer.appendChild(div);
 }
+
 
 const loadEvents = () =>
 {
