@@ -1,4 +1,4 @@
-const cart = JSON.parse(localStorage.getItem("cart")) || [];
+const cartCompras = JSON.parse(localStorage.getItem('cart')) || [];
 
 function backupCart() 
 {
@@ -16,6 +16,31 @@ function backupCart()
 
 backupCart();
 
+const deletItem = (id) => {
+    let result = cart.filter(perf => perf.id != id)
+    backupCart(result)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* const cart= JSON.parse(localStorage.getItem(cart)) || [] */
 /* 
 const cart = JSON.parse(localStorage.getItem("cart")) || [];
 

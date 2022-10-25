@@ -82,9 +82,6 @@ const Products =
     }
 ]
 
-// Filtro de busqueda de productos
-
-
 // Agregado de Productos al carrito
 
 const cart = []; //actualizar carrito
@@ -92,9 +89,7 @@ const cart = []; //actualizar carrito
 const updateCart = (cart) =>
 {
     let cartContainer = document.querySelector('#cart');
-
     //Eliminacion de html por su id (solo cuando existe)
-
     let container = document.querySelector('#cartContainer');
     if(container)
     {
@@ -116,7 +111,6 @@ const updateCart = (cart) =>
     }
     cartContainer.appendChild(div);
 }
-
 
 const loadEvents = () =>
 {
@@ -180,3 +174,15 @@ const loadProducts = (Products) =>  // cargar productos
 // Llamado de los productos
 
 loadProducts(Products);
+
+/* const eventoComprar = () => {
+    Products.forEach(item => {
+        const btn = document.querySelector(`#btn${item.id}`)
+        btn.addEventListener("click" , () => console.log(item))
+    })
+}
+
+eventoComprar(); */
+
+// Filtro de busqueda de productos
+

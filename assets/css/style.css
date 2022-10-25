@@ -130,7 +130,6 @@ section img{
     border: none;
     background-color: #d59191;
     color: rgb(252, 243, 243);
-    font-family: 'sant-serif';
     margin: 0.5rem 0rem;
 }
 
@@ -139,6 +138,9 @@ section img{
     box-shadow: 1.25px 1.25px 10px rgba(0,0,0,0.5);
 }
 
+.carousel {
+    margin: 2rem 6rem;
+}
 
 /* page contactenos */
 
@@ -196,4 +198,11 @@ footer{
 
 .sectionsCart h5{
     font-size: 14px;
+}
+
+.button-corn {
+    color: white;
+    background-color: #d59191;
+    border: none;
+    border-radius: 2rem;
 }
