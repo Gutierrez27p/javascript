@@ -221,7 +221,7 @@ h4{
 }
 
 /*mobile*/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 420px) {
     .navbar .container-fluid{
         display: flex;
         align-items: center;
@@ -243,7 +243,7 @@ h4{
         border-color: #68d3d99e;
     }
     .cantidad-carrito {
-        right: 135px;
+        right: 164px;
         position: absolute;
         display: none;
         top: 270px;
@@ -290,8 +290,37 @@ h4{
         flex-direction: column;
         align-content: space-around;
     }
+    .carritoTitle {
+        font-size: 23px;
+        margin: 0;
+    }
+    .carrito-sup {
+
+    }
+    .carrito-button {
+        margin: 0;
+        padding-left: 1rem;
+    }
+    .cart-sup {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        font-size: 16px;
+    }
+    .cart-sup h4 img {
+        height: 100px;
+        width: 100px;
+    }
+    .cart-sup h4{
+        font-size: 12px;
+    }
 }
 
+@media only screen and (min-width: 420px) and (max-width: 890px){
+    
+}
 /* @media (min-width: 992px){
     .navbar-expand-lg .navbar-collapse {
         display: flex!important;
