@@ -8,7 +8,6 @@ function guardarDatos() {
     localStorage.setItem("email",inputEmail.value)
     localStorage.setItem("comentarios",inputComentarios.value)
 }
-
 btnEnviar.addEventListener("click", guardarDatos)
 
 function recuperarDatos()
@@ -17,10 +16,8 @@ function recuperarDatos()
     inputEmail.value = localStorage.getItem("email")
     inputComentarios.value =localStorage.getItem("comentarios")
 }
-
 document.addEventListener("DOMContentLoaded", recuperarDatos)
 
 //localStorage.removeItem ("")  ----- Borrar item especifico 
 //localStorage.clear() -------------- Limpia todo lo guardado
-
 //JSON    -------    parse:   stringify: 

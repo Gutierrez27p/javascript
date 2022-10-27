@@ -39,7 +39,13 @@ Products.forEach((product) => {
                 image:product.image,
                 cantidad:product.cantidad,
         });
+        carritoCantidad();
+        saveLocal();
     }
-    carritoCantidad();
     });
 }); 
+
+const saveLocal = () =>{
+    localStorage.setItem("cart", JSON.stringify(cart));
+};
+

@@ -1,4 +1,4 @@
-let cart = [];
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 const modificarCarrito = () => {
 
@@ -31,20 +31,44 @@ const modificarCarrito = () => {
                     <h4>ID: ${product.id}</h4>
                     <h4>Producto: ${product.name} </h4>
                     <h4>Precio: $ ${product.price} </h4>
+                    <span class="restar"> ➖ </span>
                     <h4>Cantidad: ${product.cantidad} </h4>
+                    <span class="sumar"> ➕ </span>
                     <h4>Total: $ ${product.cantidad * product.price} </h4>
+                    <span class="delete-product"> ❌ </span>
     `;
 
     carritoContainer.append(carritoContent);
 
+    let restar = carritoContent.querySelector(".restar")
+    restar.addEventListener("click", () => {
+        if(product.cantidad !== 1) {
+        product.cantidad--;
+    }
+    saveLocal();
+    modificarCarrito();
+    });
+
+    let sumar = carritoContent.querySelector(".sumar")
+    sumar.addEventListener("click", () => {
+        product.cantidad++;
+        saveLocal();
+        modificarCarrito();
+    });
+
 // Evento eliminar
 
-    let eliminar = document.createElement("span");
-    eliminar.innerText = "❌";
-    eliminar.className = "delete-product";
-    carritoContent.append(eliminar);
+let eliminar = carritoContent.querySelector(".delete-product");
 
-    eliminar.addEventListener("click", eliminarProducto);
+eliminar.addEventListener("click", () =>{
+    eliminarProducto(product.id);
+})
+    // let eliminar = document.createElement("span");
+    // eliminar.innerText = "❌";
+    // eliminar.className = "delete-product";
+    // carritoContent.append(eliminar);
+
+    // eliminar.addEventListener("click", eliminarProducto);
     });
 
     let total = cart.reduce((acumulador, prod) => acumulador + parseFloat(prod.price * prod.cantidad), 0);
@@ -60,16 +84,23 @@ const modificarCarrito = () => {
 
 verCarrito.addEventListener("click", modificarCarrito);
 
-const eliminarProducto = () => {
-    const foundId = cart.find((element) => element.id);
+const eliminarProducto = (id) => {
+    const foundId = cart.find((element) => element.id === id);
     cart = cart.filter((carritoId) => {
         return carritoId !== foundId;
     });
     carritoCantidad();
+    saveLocal();
     modificarCarrito();
 };
 
 const carritoCantidad = () => {
     cantidadCarrito.style.display = "block";
-    cantidadCarrito.innerText = cart.length;
-}
+
+    const cartLength = cart.length;
+    localStorage.setItem("cartLength", JSON.stringify(cartLength))
+
+    cantidadCarrito.innerText = JSON.parse(localStorage.getItem("cartLength"));
+};
+
+carritoCantidad();

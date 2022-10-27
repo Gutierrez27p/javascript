@@ -50,7 +50,6 @@ nav ul .letter {
     padding-left: 2rem;
 }
 
-
 .carrito{
     font-size: 20px;
     margin: auto;
@@ -58,6 +57,13 @@ nav ul .letter {
     color: #0baa90;
     cursor: pointer;
 }
+
+.sumar, 
+.restar{
+    cursor: pointer;
+    padding-bottom: 0.5rem;
+}
+
 /* Carrousel */
 
 .banner{
@@ -210,18 +216,86 @@ h4{
     padding: 2rem 10rem 0 10rem;
 }
 
+.footer{
+    background-color: #19beb1;
+}
 
-
-
-
-
-
-
-
-@media (min-width: 992px){
-.navbar-expand-lg .navbar-collapse {
-    display: flex!important;
-    flex-basis: auto;
-    flex-direction: row;
+/*mobile*/
+@media only screen and (max-width: 600px) {
+    .navbar .container-fluid{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .navbar-brand {
+        font-size: 30px;
+        padding: 0;
+        margin: 0;
+    }
+    .navbar-toggler {
+        width: 33px;
+        height: 33px;
+        font-size: 13px;
+        margin: 0;
+        padding: 0;
+        color: rgb(34 179 161 / 47%);
+        border-color: #68d3d99e;
+    }
+    .cantidad-carrito {
+        right: 135px;
+        position: absolute;
+        display: none;
+        top: 270px;
+        font-size: 11px;
+    }
+    .navbar-collapse {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 2rem 0 0;
+        padding: 0;
+    }
+    .carrito-buscador {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-top: 1rem;
+        margin-bottom: 0.5rem;
+    }
+    .d-flex {
+        display: flex!important;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .carousel-inner {
+        padding: 0;
+        margin: 0;
+    }
+    .banner {
+        padding: 0;
+        margin-top: 0;
+        height: 110px;
+    }
+    .cuotas, 
+    .envios{
+        width: 300px!important;
+    }
+    .shop-content {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: space-around;
     }
 }
+
+/* @media (min-width: 992px){
+    .navbar-expand-lg .navbar-collapse {
+        display: flex!important;
+        flex-basis: auto;
+        flex-direction: row;
+        }
+} */
