@@ -295,7 +295,11 @@ h4{
         margin: 0;
     }
     .carrito-sup {
-
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
     }
     .carrito-button {
         margin: 0;
@@ -317,14 +321,323 @@ h4{
         font-size: 12px;
     }
 }
-
-@media only screen and (min-width: 420px) and (max-width: 890px){
-    
+@media only screen and (min-width: 421px) and (max-width: 436px){
+    .navbar .container-fluid{
+        display: flex;
+        
+    }
+    .navbar-brand {
+        font-size: 30px;
+        padding: 0;
+        margin: 0;
+    }
+    .navbar-toggler {
+        width: 33px;
+        height: 33px;
+        font-size: 13px;
+        margin: 0;
+        padding: 0;
+        color: rgb(34 179 161 / 47%);
+        border-color: #68d3d99e;
+    }
+    .cantidad-carrito {
+        top: 261px;
+        right: 170px;
+    }
+    .navbar-collapse {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 0;
+    }
+    .carrito-buscador {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        padding-top: 0.5rem;
+    }
+    .d-flex {
+        display: flex!important;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        padding-right: 3rem;
+    }
+    .carousel-inner {
+        padding: 0;
+        margin: 0;
+    }
+    .banner {
+        padding: 0;
+        margin-top: 0;
+        height: 170px;
+    }
+    .cuotas, 
+    .envios{
+        width: 330px!important;
+    }
+    .shop-content {
+        display: flex;
+        
+    }
+    .carritoTitle {
+        font-size: 23px;
+        margin: 0;
+    }
+    .carrito-sup {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+    }
+    .carrito-button {
+        margin: 0;
+        padding-left: 1rem;
+    }
+    .cart-sup {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        font-size: 16px;
+    }
+    .cart-sup h4 img {
+        height: 100px;
+        width: 100px;
+    }
+    .cart-sup h4{
+        font-size: 12px;
+    }
 }
-/* @media (min-width: 992px){
-    .navbar-expand-lg .navbar-collapse {
+@media only screen and (min-width: 436px) and (max-width: 504px){
+    .navbar .container-fluid{
+        display: flex;
+        
+    }
+    .navbar-brand {
+        font-size: 30px;
+        padding: 0;
+        margin: 0;
+    }
+    .navbar-toggler {
+        width: 33px;
+        height: 33px;
+        font-size: 13px;
+        margin: 0;
+        padding: 0;
+        color: rgb(34 179 161 / 47%);
+        border-color: #68d3d99e;
+    }
+    .cantidad-carrito {
+        top: 223px;
+        right: 66px;
+    }
+    .navbar-collapse {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 0;
+    }
+    .carrito-buscador {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .d-flex {
+        display: flex!important;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        padding-right: 3rem;
+    }
+    .carousel-inner {
+        padding: 0;
+        margin: 0;
+    }
+    .banner {
+        padding: 0;
+        margin-top: 0;
+        height: 170px;
+    }
+    .cuotas, 
+    .envios{
+        width: 330px!important;
+    }
+    .shop-content {
+        display: flex;
+        
+    }
+    .carritoTitle {
+        font-size: 23px;
+        margin: 0;
+    }
+    .carrito-sup {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+    }
+    .carrito-button {
+        margin: 0;
+        padding-left: 1rem;
+    }
+    .cart-sup {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        font-size: 16px;
+    }
+    .cart-sup h4 img {
+        height: 100px;
+        width: 100px;
+    }
+    .cart-sup h4{
+        font-size: 12px;
+    }
+}
+@media only screen and (min-width: 505px) and (max-width: 660px){
+    .navbar-brand {
+        font-size: 30px;
+        padding: 0;
+        margin: 0;
+    }
+    .cantidad-carrito {
+        top: 250px;
+        right: 80px;
+    }
+    .navbar-collapse {
+        display: flex;
+        
+    }
+    .d-flex {
+        display: flex!important;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        padding-right: 3rem;
+    }
+    .carousel-inner {
+        padding: 0;
+        margin: 0;
+    }
+    .banner {
+        padding: 0;
+        margin-top: 0;
+        height: 170px;
+    }
+    .cuotas, 
+    .envios{
+        width: 330px!important;
+    }
+    .cart-sup {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        font-size: 16px;
+    }
+    .cart-sup h4 img {
+        height: 100px;
+        width: 100px;
+    }
+    .cart-sup h4{
+        font-size: 12px;
+    }
+}
+@media only screen and (min-width: 661px) and (max-width: 991px){
+    .navbar-collapse {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: baseline;
+        flex-direction: row;
+        padding-right: 4.2rem;
+        margin: 0;
+    }
+    .navbar-toggler {
+        width: 33px;
+        height: 33px;
+        font-size: 13px;
+        margin: 0;
+        padding: 0;
+        color: rgb(34 179 161 / 47%);
+        border-color: #68d3d99e;
+    }
+    .cantidad-carrito {
+        font-size: 12px;
+        top: 66px;
+        right: 75px;
+        position: absolute;
+        display: none;
+    }
+    .banner {
+        padding: 0;
+        margin-top: 0;
+        height: 170px;
+    }
+    .cart-sup {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        font-size: 16px;
+    }
+    .cart-sup h4 img {
+        height: 100px;
+        width: 100px;
+    }
+    .cart-sup h4{
+        font-size: 12px;
+    }
+}
+@media only screen and (min-width: 992px){
+    .navbar-collapse {
+        margin: 0;
         display: flex!important;
         flex-basis: auto;
         flex-direction: row;
-        }
-} */
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .cantidad-carrito {
+        font-size: 12px;
+        top: 66px;
+        right: 75px;
+        position: absolute;
+        display: none;
+    }
+    .buscador .buscar {
+        font-size: 15px;
+        width: 210px;
+    }
+    .cantidad-carrito {
+        font-size: 12px;
+        top: 14px;
+        right: 9px;
+        position: absolute;
+        display: none;
+    }
+    .carousel-inner {
+        margin-top: 0;
+    }
+    .banner {
+        padding: 0;
+        margin-top: 0;
+        height: 250px;
+    }
+}
