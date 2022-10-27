@@ -24,4 +24,3 @@ document.addEventListener("DOMContentLoaded", recuperarDatos)
 //localStorage.clear() -------------- Limpia todo lo guardado
 
 //JSON    -------    parse:   stringify: 
-
