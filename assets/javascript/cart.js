@@ -35,7 +35,7 @@ const modificarCarrito = () => {
                     <h4>Cantidad: ${product.cantidad} </h4>
                     <span class="sumar"> ➕ </span>
                     <h4>Total: $ ${product.cantidad * product.price} </h4>
-                    <span class="delete-product"> ❌ </span>
+                    <span class="delete-product" id="deleteProduct"> ❌ </span>
     `;
 
     carritoContainer.append(carritoContent);
@@ -62,20 +62,22 @@ let eliminar = carritoContent.querySelector(".delete-product");
 
 eliminar.addEventListener("click", () =>{
     eliminarProducto(product.id);
-})
+    eliminarCart();
+    })
     // let eliminar = document.createElement("span");
     // eliminar.innerText = "❌";
     // eliminar.className = "delete-product";
     // carritoContent.append(eliminar);
 
     // eliminar.addEventListener("click", eliminarProducto);
-    });
+});
 
     let total = cart.reduce((acumulador, prod) => acumulador + parseFloat(prod.price * prod.cantidad), 0);
 
     const totalCompra = document.createElement("div")
     totalCompra.className = "total-content";
-    totalCompra.innerHTML = `Total a pagar: ${total}`;
+    totalCompra.innerHTML = `<button type="button" class="btn-compra">Comprar</button>
+                                Total a pagar: ${total}`;
 
     carritoContainer.append(totalCompra);
 };

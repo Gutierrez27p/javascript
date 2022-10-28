@@ -39,6 +39,7 @@ Products.forEach((product) => {
                 image:product.image,
                 cantidad:product.cantidad,
         });
+        agregadoCart();
         carritoCantidad();
         saveLocal();
     }
@@ -48,4 +49,3 @@ Products.forEach((product) => {
 const saveLocal = () =>{
     localStorage.setItem("cart", JSON.stringify(cart));
 };
-
