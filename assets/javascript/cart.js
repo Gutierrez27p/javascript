@@ -73,12 +73,10 @@ eliminar.addEventListener("click", () =>{
 });
 
     let total = cart.reduce((acumulador, prod) => acumulador + parseFloat(prod.price * prod.cantidad), 0);
-
     const totalCompra = document.createElement("div")
     totalCompra.className = "total-content";
     totalCompra.innerHTML = `<button type="button" class="btn-compra">Comprar</button>
                                 Total a pagar: ${total}`;
-
     carritoContainer.append(totalCompra);
 };
 

@@ -55,3 +55,13 @@ const agregadoCart = () => {
         timer: 700
     });
 }
+
+const compraCart = () => {
+    Swal.fire({
+        title: ' Messi!',
+        text: '¡Gracias por confiar en nosotros!❤',
+        imageUrl: 'assets/img/messi.png',
+        imageWidth: 220,
+        imageAlt: 'Custom image',
+    });
+}
