@@ -25,8 +25,10 @@ const modificarCarrito = () => {
     cart.forEach((product) => {
 
     let carritoContent = document.createElement("div")
+
     carritoContent.className = "cart-sup"
     carritoContent.innerHTML = `
+                    <hr>
                     <h4><img src="${product.image}"></h4>
                     <h4>ID: ${product.id}</h4>
                     <h4>Producto: ${product.name} </h4>
@@ -72,12 +74,19 @@ eliminar.addEventListener("click", () =>{
     // eliminar.addEventListener("click", eliminarProducto);
 });
 
+// Suma de productos por cantidad
     let total = cart.reduce((acumulador, prod) => acumulador + parseFloat(prod.price * prod.cantidad), 0);
+    
     const totalCompra = document.createElement("div")
     totalCompra.className = "total-content";
-    totalCompra.innerHTML = `<button type="button" class="btn-compra">Comprar</button>
+    totalCompra.innerHTML = `<button type="button" class="btn-compra" id="btnComprar">Comprar</button>
                                 Total a pagar: ${total}`;
     carritoContainer.append(totalCompra);
+    btnComprar.addEventListener('click', () => {
+        cart = []
+        compraCart ();
+        modificarCarrito();
+    });
 };
 
 // Eliminar del carrito

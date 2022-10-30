@@ -2,6 +2,7 @@ const shopContent = document.getElementById("shopContent");
 const verCarrito = document.getElementById("verCarrito");
 const carritoContainer = document.getElementById("carritoContainer");
 const cantidadCarrito = document.getElementById("cantidadCarrito");
+const loading = () => `<img class="loading" src="assets/img/Loading.gif" alt="loading" width="150px">`
 
 Products.forEach((product) => {
     let content = document.createElement("div");
@@ -49,5 +50,3 @@ Products.forEach((product) => {
 const saveLocal = () =>{
     localStorage.setItem("cart", JSON.stringify(cart));
 };
-
-setTimeout (falsoAnuncio);
