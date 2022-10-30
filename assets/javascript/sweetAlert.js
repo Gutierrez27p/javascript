@@ -1,5 +1,5 @@
 // // Falsa publicidad
-
+const falsoAnuncio = () =>{
     Swal.fire({
         title: 'Promo + Regalo',
         html: '<a href="#" class="btn-publi">Comprar ahora</a>',
@@ -25,6 +25,7 @@
         imageWidth: '90%',
         imageAlt: 'Producto en oferta ilimitada'
     });
+}
 
 const eliminarCart = () =>{
     Swal.fire({

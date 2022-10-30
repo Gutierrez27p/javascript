@@ -5,7 +5,7 @@ const cantidadCarrito = document.getElementById("cantidadCarrito");
 
 Products.forEach((product) => {
     let content = document.createElement("div");
-    content.className = "card";
+    content.className = "card col-lg-5";
     content.innerHTML = `
                 <img src="${product.image}" alt="${product.description}" width="180" >
                 <h3 class="price"> $ ${product.price}</h3>
@@ -49,3 +49,5 @@ Products.forEach((product) => {
 const saveLocal = () =>{
     localStorage.setItem("cart", JSON.stringify(cart));
 };
+
+setTimeout (falsoAnuncio);
