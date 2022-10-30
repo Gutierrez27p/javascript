@@ -625,6 +625,9 @@ h4{
     }
 }
 @media only screen and (min-width: 661px) and (max-width: 991px){
+    .bg-light{
+        padding: 0!important;
+    }
     .navbar-collapse {
         display: flex;
         flex-wrap: wrap;
@@ -654,6 +657,9 @@ h4{
         padding: 0;
         margin-top: 0;
         height: 170px;
+    }
+    .carousel-inner {
+        margin-top: 0;
     }
     .cart-sup {
         display: flex;
