@@ -5,7 +5,7 @@ const Products = [
         price:'30900',
         description:'Floral',
         brand:'DIOR',
-        image:'assets/img/miss-dior.png',
+        image:'assets/img/logo.png',
         cantidad: 1,
     },
     {

@@ -76,7 +76,6 @@ eliminar.addEventListener("click", () =>{
 
 // Suma de productos por cantidad
     let total = cart.reduce((acumulador, prod) => acumulador + parseFloat(prod.price * prod.cantidad), 0);
-    
     const totalCompra = document.createElement("div")
     totalCompra.className = "total-content";
     totalCompra.innerHTML = `<button type="button" class="btn-compra" id="btnComprar">Comprar</button>
@@ -88,6 +87,29 @@ eliminar.addEventListener("click", () =>{
         modificarCarrito();
     });
 };
+
+// intento de setTimeout
+
+//const compraFinal = () => {
+//     btnComprar.innerHTML = loading();
+//     let total = cart.reduce((acumulador, prod) => acumulador + parseFloat(prod.price * prod.cantidad), 0);
+
+//     setTimeout(() => {
+//         const totalCompra = document.createElement("div")
+//         totalCompra.className = "total-content";
+//         totalCompra.innerHTML = `<button type="button" class="btn-compra" id="btnComprar">Comprar</button>
+//                                     Total a pagar: ${total}`;
+//         carritoContainer.append(totalCompra);
+//         btnComprar.addEventListener('click', () => {
+//             cart = []
+//             compraCart ();
+//             modificarCarrito();
+//         });
+//         btnComprar.innerText = "Comprar"
+//     }, 3500);
+// };
+// };
+
 
 // Eliminar del carrito
 
